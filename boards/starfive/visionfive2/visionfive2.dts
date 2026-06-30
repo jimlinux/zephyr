@@ -21,6 +21,7 @@
 
 &uart0 {
 	status = "okay";
+	clock-frequency = <24000000>;
 	current-speed = <115200>;
 };
 
