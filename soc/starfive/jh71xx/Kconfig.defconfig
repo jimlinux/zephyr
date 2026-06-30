@@ -15,7 +15,12 @@ config 2ND_LVL_ISR_TBL_OFFSET
 config 2ND_LVL_INTR_00_OFFSET
 	default 11
 
+config MAX_IRQ_PER_AGGREGATOR
+	default 127 if SOC_JH7100
+	default 136 if SOC_JH7110
+
 config NUM_IRQS
-	default 139
+	default 139 if SOC_JH7100
+	default 148 if SOC_JH7110
 
 endif

@@ -190,7 +190,7 @@
 						<&cpu4_intc 11>, <&cpu4_intc 9>;
 			reg = <0x0 0x0c000000 0x0 0x04000000>;
 			riscv,max-priority = <7>;
-			riscv,ndev = <52>;
+			riscv,ndev = <136>;
 		};
 
 		uart0: serial@10000000 {
