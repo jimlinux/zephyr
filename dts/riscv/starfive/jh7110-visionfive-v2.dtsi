@@ -133,9 +133,9 @@
 		};
 	};
 
-	l2lim: memory@8000000 {
+	dram0: memory@40000000 {
 		device_type = "memory";
-		reg = <0x0 0x8000000 0x0 0x200000>;
+		reg = <0x0 0x40000000 0x0 0x200000>;
 	};
 
 	soc {

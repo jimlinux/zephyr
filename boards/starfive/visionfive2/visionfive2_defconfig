@@ -3,6 +3,7 @@
 # Zephyr Kernel Configuration
 CONFIG_PRINTK=y
 CONFIG_XIP=n
+CONFIG_RV_BOOT_HART=1
 
 # Serial Drivers
 CONFIG_SERIAL=y
