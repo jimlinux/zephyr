@@ -13,19 +13,22 @@
 	compatible = "starfive,visionfive-v2";
 
 	chosen {
-		zephyr,console = &uart0;
-		zephyr,shell-uart = &uart0;
+		zephyr,console = &uart2;
+		zephyr,shell-uart = &uart2;
 		zephyr,sram = &dram0;
 	};
 };
 
 &uart0 {
-	status = "okay";
-	clock-frequency = <24000000>;
-	current-speed = <115200>;
+	status = "disabled";
 };
 
 &uart1 {
+	status = "disabled";
+};
+
+&uart2 {
 	status = "okay";
+	clock-frequency = <24000000>;
 	current-speed = <115200>;
 };
