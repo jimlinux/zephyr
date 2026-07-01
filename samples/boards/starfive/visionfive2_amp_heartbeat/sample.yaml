@@ -1,0 +1,12 @@
+sample:
+  name: VisionFive 2 AMP shared-memory heartbeat
+  description: Publishes an S7 heartbeat for Linux through reserved shared memory.
+common:
+  tags:
+    - amp
+    - riscv
+  platform_allow:
+    - visionfive2/jh7110
+  harness: none
+tests:
+  sample.board.visionfive2_amp_heartbeat: {}
